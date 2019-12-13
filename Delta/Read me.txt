@@ -1,0 +1,14 @@
+Delta Application
+
+Framework : Flask 
+Technologies: Python, HTML, CSS , Javascript, Jquery, Bootstrap
+
+Below Requirements included in application:
+- User can search with airport code and airport name of Origin and destination. 
+- User can search with airport code and airport name in uppercase or lower case.
+- when user search Origin and destination data and click on search button user will get list of all flights availabe in below table.
+- Currently User can see Flight Number, Origin airport code, Origin airport name , Destination airport code and Destination airport name in result table but more columns can be added or deleted from CSV file as per requirements
+- This web application is responsive 
+
+Other Features
+- Fevicon icon added

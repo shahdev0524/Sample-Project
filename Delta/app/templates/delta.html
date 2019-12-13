@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Delta Flight search</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	 	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+	         rel = "stylesheet">
+        <link rel="stylesheet" href="static/css/delta.css">
+        <link rel="shortcut icon" href="static/img/delta.png" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div  class="col-sm-12 col-lg-8 one">
+					<img src="static/img/delta.png", style="float:left;width:42px;height:42px;" >
+					<h2 style="color:white; margin-top: 10px;">    DELTA</h2>
+				</div>
+
+				<div  class="col-sm-12 col-lg-8 one">
+					<form>
+						<label for = "Origin"></label>
+						<input autocomplete=true type="text" name="Origin" id="Origin" placeholder="Origin" style="font-weight: bold;">
+						<label for = "destination"></label>
+						<input type="text" name="Destination" id="destination" placeholder="Destination" style="font-weight: bold;">
+						<button type="button" id="flight_search" name="search" value="search" class="btn btn-danger"><i class="fas fa-search"></i> &nbsp SEARCH</button>
+					</form>
+				</div>
+
+				<div class="col-sm-12 col-lg-8 one">
+					<h2 class="three" style="color:white; margin-top: 10px;"> Flight search result</h2>
+				</div>
+
+				<div class="col-sm-12 col-lg-8 one two">
+					<table class="table">
+						<thead>
+							<th style="color:white;">Flight No</th>
+							<th style="color:white;">Origin Code</th>
+							<th style="color:white;">Origin</th>
+							<th style="color:white;">Destination Code</th>
+							<th style="color:white;">Destination</th>
+						</thead>
+						<tbody id="flightdata" style="color:white;"></tbody>	
+					</table>
+				</div>
+			</div>	
+		</div>
+		<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="static/js/delta.js"></script>	
+		<script type="text/javascript" src="static/js/main.js"></script>
+	</body>
+</html>

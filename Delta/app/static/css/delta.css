@@ -1,0 +1,11 @@
+.one { 
+	height: 60px;
+	margin:auto;
+	width:800px;
+	border-color: 2px solid green;
+	background-color: #11172b;
+}
+
+.two { 
+	height: 500px;
+}
