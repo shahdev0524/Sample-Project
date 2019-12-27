@@ -7,7 +7,7 @@ pd.set_option('display.max_columns', 100)
 pd.set_option('display.width', 227)
 
 # to create dataframe from CSV file
-df1=pd.read_csv('flights_data_dataframe.csv')
+df1=pd.read_csv('Testdata1.csv')
 print(df1)
 
 print("filter data")
@@ -89,9 +89,6 @@ print("*** update with if...than...else")
 df1.Price_level = np.where(df1.Price > 201,'costly','cheaper')
 print(df1.iloc[:5,-4:])
 
-#method 2
-#df['new column name'] = df['column name'].apply(lambda x: 'value if condition is met' if x condition else 'value if condition is not met')
-
 print("sort")
 print("*** sort by values ***")
 sort_values=df1.sort_values('Price')
@@ -131,7 +128,7 @@ index_column=df1.set_index('Coreid')
 print(index_column)
 
 print("*** df2")
-df2=pd.read_csv('flights_data_dataframe2.csv')
+df2=pd.read_csv('Testdata2.csv')
 print(df2)
 
 print("***Union all")
@@ -167,18 +164,6 @@ print(Right_join.loc[:,['Coreid','Coreid_2']])
 print("*** concatenation between 2 columns")
 df1['flight_fulldetail']=df1['origin_full_name'] + ' TO ' + df1['destination_full_name']
 print(df1.loc[:,['origin_full_name','destination_full_name','flight_fulldetail']])
-
-print("*** IMP: to get second column")
-#https://www.shanelynn.ie/select-pandas-dataframe-rows-and-columns-using-iloc-loc-and-ix/
-#List25={'Name':['Tom', 'Jack', 'Steve','John','akhil','khan'],
-#'Age':[25,40,35,90,14,92]}
-#df25=pd.DataFrame(List25)
-#print(df25.iloc[:,1])
-print("*** to get second row")
-#print(df25.iloc[1])
-
-print("*** IMP: to get by column names")
-#use loc ... 
 
 print("*** calculation between 2 columns")
 #df10["ab"] = 25
